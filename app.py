@@ -36,7 +36,7 @@ def getTokens(url):
 location = r'C:\Users\Ashwek\Documents\project_final\.env\pkl'
 
 fullpath = os.path.join(location, 'model.pkl')
-model = pickle.load(open(fullpath,'rb'))
+model = joblib.load(os.path.join(location,"model.pkl"),'rb')
 tVec = joblib.load(os.path.join(location,"tVec.pkl"),'rb')
 
 
