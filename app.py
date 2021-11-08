@@ -33,11 +33,11 @@ def getTokens(url):
   return tokens
 
 
-location = r'C:\Users\Ashwek\Documents\project_final\.env\pkl'
+#location = r'C:\Users\Ashwek\Documents\project_final\.env\pkl'
 
-fullpath = os.path.join(location, 'model.pkl')
-model = joblib.load(os.path.join(location,"model.pkl"),'rb')
-tVec = joblib.load(os.path.join(location,"tVec.pkl"),'rb')
+#fullpath = os.path.join(location, 'model.pkl')
+model = joblib.load("pkl/model.pkl")
+tVec = joblib.load("pkl/tVec.pkl")
 
 
 
